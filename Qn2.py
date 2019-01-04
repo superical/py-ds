@@ -24,7 +24,7 @@ def binary_search(data, target):
   elif target < data[mid]:
     return binary_search(data[:mid], target)
   else:
-    return binary_search(data[mid:], target) 
+    return binary_search(data[mid+1:], target) 
 
 #searchNum = 177
 searchNum = randint(0, 100)
